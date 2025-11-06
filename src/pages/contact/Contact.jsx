@@ -1,0 +1,76 @@
+import "./contact.css";
+
+const Contact = () => {
+    
+    return (
+    <section class="contact-section">
+      <section class="container">
+
+            <div class="contact-info">
+                <h2>Contact me</h2>
+
+                <div class="contact-me-div">
+
+                    <div class="form-container">
+                        <form class="form-class contact-form">
+
+                            <div class="input-div">
+                                <input type="text" id="name-input" placeholder="Name"/>
+                                <p id="name-error-message" class="error-message"></p>
+                            </div>
+
+                            <div class="input-div">
+                                <input type="email" id="email-input" placeholder="Email"/>
+                                <p id="email-error-message" class="error-message"></p>
+                            </div>
+
+                            <div class="input-div">
+                                <textarea id="message" placeholder="Write something..."></textarea>
+                                <p id="textarea-error-message" class="error-message"></p>
+                            </div>
+
+                            <button type="submit" class="form-button">Submit</button>
+                            <p id="success"></p>
+                            
+                        </form>
+                    </div>
+
+                    <div class="contact-item">
+
+                        <div class="contact-box" data-copy="crboseskimario@gmail.com">
+                            <div class="contact-box-content">
+                                <img src="../projects-content/mail-icon.png" alt="mail" class="icon"/>
+                                <p>Mail</p> 
+                            </div>
+                            <div class="toast-notification"></div>
+                            <img src="../projects-content/copy-icon.png" alt="copy-icon" class="copy-icon"/>
+                        </div>  
+
+                        <div class="contact-box" data-copy="https://www.linkedin.com/in/mario-boseski-7773b630b/">
+                            <div class="contact-box-content">
+                                <img src="../projects-content/mail-icon.png" alt="mail" class="icon"/>
+                                <p>LinkedIn</p> 
+                            </div>
+                            <div class="toast-notification"></div>
+                            <img src="../projects-content/copy-icon.png" alt="copy-icon" class="copy-icon"/>
+                        </div>
+
+                        <div class="contact-box" data-copy="https://github.com/Marioboseski">
+                            <div class="contact-box-content">
+                                <img src="../projects-content/mail-icon.png" alt="mail" class="icon"/>
+                                <p>GitHub-Link</p> 
+                            </div>
+                            <div class="toast-notification"></div>
+                            <img src="../projects-content/copy-icon.png" alt="copy-icon" class="copy-icon"/>
+                        </div>                     
+
+                    </div>
+                </div>
+            </div>
+
+      </section>        
+    </section>
+    );
+}
+
+export default Contact;
