@@ -1,0 +1,91 @@
+.home-section {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.home-div-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.home-div-class h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: italic;
+}
+
+.home-section-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-section-class img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px 50px;
+    transition: 0.3s ease;
+}
+
+.home-section-class img:hover {
+    transform: scale(1.1);
+}
+
+.home-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.home-info p {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "italic";
+}
+
+.cv-contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.cv-contact-links .resume-link {
+    color: black;
+    background-color: rgb(153, 153, 188);
+    border: 1px solid rgb(92, 91, 91);
+    border-radius: 10px 20px 10px 20px;
+    padding: 1rem;
+    font-size: 1.5rem; 
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.cv-contact-links .resume-link:hover {
+    background-color: rgb(120, 125, 233);
+}
+
+.cv-contact-links .contact-link  {
+    color: black;
+    background-color: rgb(250, 249, 249);
+    border: 2px solid #0a0909;
+    border-radius: 10px 20px 10px 20px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;    
+    transition: 0.3s ease-out;
+}
+
+.cv-contact-links .contact-link:hover {
+    background-color: rgb(229, 218, 218);
+}
