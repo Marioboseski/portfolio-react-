@@ -1,0 +1,137 @@
+.projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.projects-section h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: italic;
+}
+
+.personal-finance-tracker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgba(249, 247, 247, 0.582);
+    border: 2px solid rgba(103, 99, 99, 0.362);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 950px;
+    padding: 1.5rem;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.project-text-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-text-div .real-world-project-paragraph {
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(150, 148, 145);
+    padding: 1rem;
+}
+
+.project-text-div .build-with-paragraph {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project-text-div .name-project-paragraph {
+    font-size: 2rem;
+}
+
+.video-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+.video-image-div img {
+    width: 100%;
+    max-width: 450px;
+    min-height: 220px;
+    border-radius: 10px;
+}
+
+.video-image-div video {
+    width: 100%;
+    max-width: 450px;
+    min-height: 220px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.project-links a {
+    color: black;
+    background-color: rgb(150, 148, 145);
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;  
+    transition: 0.3s ease-in;
+}
+
+.project-links a:hover {
+    background-color: rgb(170, 169, 188);;
+}
+
+.country-info-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgba(249, 247, 247, 0.582);
+    border: 2px solid rgba(103, 99, 99, 0.362);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 950px;
+    padding: 1.5rem;
+}
+
+.expense-trakcer-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgba(249, 247, 247, 0.582);
+    border: 2px solid rgba(103, 99, 99, 0.362);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 950px;
+    padding: 1.5rem;
+}
