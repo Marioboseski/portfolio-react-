@@ -1,7 +1,7 @@
 import "./projects.css";
 
 const Projects = () => {
-  
+
   return (
     <div>
       <section className="projects-section">
@@ -21,13 +21,13 @@ const Projects = () => {
 
               <div className="video-image-div">
                 <img
-                  src="../projects-content/Personal-Finance-Tracker-Image.png"
+                  src="src/assets/Personal-Finance-Tracker-Image.png"
                   alt="project-image"
                 />
 
                 <video controls autoPlay muted loop width="600">
-                  <source src="../projects-content/Personal-Finance-Tracker-Video.mp4" type="video/mp4" />
-                  <source src="../projects-content/Personal-Finance-Tracker-Video.mp4" type="video/webm" />
+                  <source src="src/assets/Personal-Finance-Tracker-Video.mp4" type="video/mp4" />
+                  <source src="src/assets/Personal-Finance-Tracker-Video.mp4" type="video/webm" />
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -55,13 +55,13 @@ const Projects = () => {
 
               <div className="video-image-div">
                 <img
-                  src="../projects-content/Country-Info-App-Image.png"
+                  src="src/assets/Country-Info-App-Image.png"
                   alt="project-image"
                 />
 
                 <video controls autoPlay muted loop width="600">
-                  <source src="../projects-content/Country-Info-App-Video.mp4" type="video/mp4" />
-                  <source src="../projects-content/Country-Info-App-Video.mp4" type="video/webm" />
+                  <source src="src/assets/Country-Info-App-Video.mp4" type="video/mp4" />
+                  <source src="src/assets/Country-Info-App-Video.mp4" type="video/webm" />
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -90,13 +90,13 @@ const Projects = () => {
 
               <div className="video-image-div">
                 <img
-                  src="../projects-content/Expense-Tracker-App-Image.png"
+                  src="src/assets/Expense-Tracker-App-Image.png"
                   alt="project-image"
                 />
 
                 <video controls autoPlay muted loop width="600">
-                  <source src="../projects-content/Expense-Tracker-App-Video.mp4" type="video/mp4" />
-                  <source src="../projects-content/Expense-Tracker-App-Video.mp4" type="video/webm" />
+                  <source src="src/assets/Expense-Tracker-App-Video.mp4" type="video/mp4" />
+                  <source src="src/assets/Expense-Tracker-App-Video.mp4" type="video/webm" />
                   Your browser does not support the video tag.
                 </video>
               </div>
