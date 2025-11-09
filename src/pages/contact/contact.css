@@ -1,133 +1,135 @@
 .contact-section {
-    padding: 1.5rem;
-    flex: 1;
+  padding: 1.5rem;
+  flex: 1;
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
 }
 
 .contact-info h2 {
-    font-size: 4rem;
-    font-weight: bold;
-    font-family: italic;    
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: italic;
 }
 
 .contact-me-div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
 }
 
 .form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: 2px solid rgb(13, 13, 13);
-    padding-right: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid rgb(13, 13, 13);
+  padding-right: 1.1rem;
 }
 
 .form-class {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    gap: 1.5rem;
-    width: 100%;
-    max-width: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 650px;
 }
 
 .input-div {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
 }
 
 .input-div input {
-    color: black;
-    background-color: rgb(238, 234, 234);
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.5rem;
-    border: 1px solid rgb(96, 95, 95);;
-    border-radius: 10px; 
+  color: black;
+  background-color: rgb(238, 234, 234);
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 1px solid rgb(96, 95, 95);
+  ;
+  border-radius: 10px;
 }
 
 .input-div textarea {
-    color: black;
-    background-color: rgb(238, 234, 234);
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.5rem;    
-    border-radius: 15px;
-    border: 1px solid rgb(96, 95, 95);
-    min-height: 200px;  
+  color: black;
+  background-color: rgb(238, 234, 234);
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid rgb(96, 95, 95);
+  min-height: 200px;
 }
 
 .input-div p {
-    font-size: 0.5rem;
-    color: red;
+  font-size: 0.5rem;
+  color: red;
 }
 
 .form-class button {
-    width: 100%;
-    max-width: 400px;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    background-color: rgb(238, 234, 234);;
-    border: 2px solid rgb(96, 95, 95);
-    border-radius: 10px;
-    cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: rgb(238, 234, 234);
+  ;
+  border: 2px solid rgb(96, 95, 95);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 #success {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(25, 125, 25);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(25, 125, 25);
 }
 
 .contact-item {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
 .contact-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    text-align: center;  
-    background-color: rgb(238, 234, 234);
-    padding: 0.5rem; 
-    border: none;
-    border-radius: 10px;
-    transition: 0.3s ease;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(238, 234, 234);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .contact-box:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .contact-box-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .contact-box .icon {
-    width: 100%;
-    max-width: 70px;
+  width: 100%;
+  max-width: 70px;
 }
 
 .contact-box p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .toast-notification {
@@ -136,10 +138,10 @@
 }
 
 .toast-notification.show {
-    opacity: 1;
+  opacity: 1;
 }
 
 .contact-box .copy-icon {
-    width: 100%;
-    max-width: 40px;
+  width: 100%;
+  max-width: 40px;
 }

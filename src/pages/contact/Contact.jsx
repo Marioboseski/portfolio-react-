@@ -1,76 +1,111 @@
+import { useState } from "react";
+import ContactBox from "./ContactBox";
 import "./contact.css";
 
 const Contact = () => {
-    
-    return (
-    <section class="contact-section">
-      <section class="container">
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: ""
+  })
 
-            <div class="contact-info">
-                <h2>Contact me</h2>
+  const [errors, setErrors] = useState({});
+  const [success, setSuccess] = useState("");
 
-                <div class="contact-me-div">
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-                    <div class="form-container">
-                        <form class="form-class contact-form">
+    let newErrors = {};
 
-                            <div class="input-div">
-                                <input type="text" id="name-input" placeholder="Name"/>
-                                <p id="name-error-message" class="error-message"></p>
-                            </div>
+    if (!form.name.trim()) newErrors.name = "Enter your name";
+    if (!form.email.trim()) newErrors.email = "Enter your email";
+    else if (!form.email.includes("@") || !form.email.includes(".")) newErrors.email = "Enter valid email";
+    if (!form.message.trim()) newErrors.message = "You must enter a message";
+    else if (form.message.length < 10) newErrors.message = "The message must be over 10 characters";
 
-                            <div class="input-div">
-                                <input type="email" id="email-input" placeholder="Email"/>
-                                <p id="email-error-message" class="error-message"></p>
-                            </div>
+    setErrors(newErrors);
 
-                            <div class="input-div">
-                                <textarea id="message" placeholder="Write something..."></textarea>
-                                <p id="textarea-error-message" class="error-message"></p>
-                            </div>
+    if (Object.keys(newErrors).length === 0) {
+      setSuccess("Your message has been sent");
+      setForm({
+        name: "",
+        email: "",
+        message: ""
+      });
+      setTimeout(() => setSuccess(""), 3000);
+    }
+  };
 
-                            <button type="submit" class="form-button">Submit</button>
-                            <p id="success"></p>
-                            
-                        </form>
-                    </div>
+  const handleChage = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    });
+  }
 
-                    <div class="contact-item">
+  return (
+    <section className="contact-section">
+      <section className="container">
 
-                        <div class="contact-box" data-copy="crboseskimario@gmail.com">
-                            <div class="contact-box-content">
-                                <img src="../projects-content/mail-icon.png" alt="mail" class="icon"/>
-                                <p>Mail</p> 
-                            </div>
-                            <div class="toast-notification"></div>
-                            <img src="../projects-content/copy-icon.png" alt="copy-icon" class="copy-icon"/>
-                        </div>  
+        <div className="contact-info">
+          <h2>Contact me</h2>
 
-                        <div class="contact-box" data-copy="https://www.linkedin.com/in/mario-boseski-7773b630b/">
-                            <div class="contact-box-content">
-                                <img src="../projects-content/mail-icon.png" alt="mail" class="icon"/>
-                                <p>LinkedIn</p> 
-                            </div>
-                            <div class="toast-notification"></div>
-                            <img src="../projects-content/copy-icon.png" alt="copy-icon" class="copy-icon"/>
-                        </div>
+          <div className="contact-me-div">
 
-                        <div class="contact-box" data-copy="https://github.com/Marioboseski">
-                            <div class="contact-box-content">
-                                <img src="../projects-content/mail-icon.png" alt="mail" class="icon"/>
-                                <p>GitHub-Link</p> 
-                            </div>
-                            <div class="toast-notification"></div>
-                            <img src="../projects-content/copy-icon.png" alt="copy-icon" class="copy-icon"/>
-                        </div>                     
 
-                    </div>
+            <div className="form-container">
+              <form className="form-class" onSubmit={handleSubmit}>
+
+                <div className="input-div">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    value={form.name}
+                    onChange={handleChage}
+                  />
+                  {errors.name && <p>{errors.name}</p>}
                 </div>
+
+                <div className="input-div">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    value={form.email}
+                    onChange={handleChage}
+                  />
+                  {errors.email && <p>{errors.email}</p>}
+                </div>
+
+                <div className="input-div">
+                  <textarea
+                    name="message"
+                    placeholder="Write something..."
+                    value={form.message}
+                    onChange={handleChage}
+                  />
+                  {errors.message && <p>{errors.message}</p>}
+                </div>
+
+                <button type="submit">Submit</button>
+                {success && <p id="success">{success}</p>}
+              </form>
             </div>
 
-      </section>        
+
+            <div className="contact-item">
+              <ContactBox label="Mail" text="crboseskimario@gmail.com" />
+              <ContactBox label="LinkedIn" text="https://www.linkedin.com/in/mario-boseski-7773b630b/" />
+              <ContactBox label="GitHub-Link" text="https://github.com/Marioboseski" />
+            </div>
+
+          </div>
+        </div>
+
+      </section>
     </section>
-    );
-}
+  );
+};
 
 export default Contact;
