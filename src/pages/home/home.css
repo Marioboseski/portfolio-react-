@@ -89,3 +89,20 @@
 .cv-contact-links .contact-link:hover {
   background-color: rgb(229, 218, 218);
 }
+
+@media (max-width: 768px) {
+  .home-section-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .cv-contact-links {
+    flex-direction: column;
+  }
+}

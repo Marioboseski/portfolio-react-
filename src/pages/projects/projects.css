@@ -136,3 +136,17 @@
   max-width: 950px;
   padding: 1.5rem;
 }
+
+@media (max-width: 600px) {
+  .projects-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .project-links {
+    flex-direction: column;
+  }
+}
