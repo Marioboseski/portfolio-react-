@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./home.css";
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
 
               <ul className="cv-contact-links">
                 <li><a href="src/assets/Resume - Mario Boseski.pdf" className="resume-link" download="Mario Boseski - Resume.pdf">Resume</a></li>
-                <li><a href="Pages/contact.html" className="contact-link">Contact me</a></li>
+                <li><Link to="contact" className="contact-link">Contact me</Link></li>
               </ul>
             </div>
           </section>
