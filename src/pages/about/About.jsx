@@ -15,7 +15,7 @@ const About = () => {
             <div className="about-info-paragraphs">
               <p>Hi! I'm Mario Boseski, a Front End Web Developer with a huge passion
                 for coding. With over two years of experience i learnt <strong>HTML</strong>,
-                <strong>CSS</strong>, <strong>JavaScript</strong> and <strong>Git&GitHub</strong>
+                <strong>CSS</strong>, <strong>JavaScript</strong> and <strong>Git&GitHub </strong>
                 version control and workflow.
               </p>
 
