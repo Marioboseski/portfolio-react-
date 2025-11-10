@@ -18,7 +18,7 @@ const Home = () => {
               </p>
 
               <ul className="cv-contact-links">
-                <li><a href="Resume - Mario Boseski.pdf" className="resume-link" download="Mario Boseski - Resume.pdf">Resume</a></li>
+                <li><a href="src/assets/Resume - Mario Boseski.pdf" className="resume-link" download="Mario Boseski - Resume.pdf">Resume</a></li>
                 <li><a href="Pages/contact.html" className="contact-link">Contact me</a></li>
               </ul>
             </div>
