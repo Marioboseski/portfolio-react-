@@ -9,7 +9,7 @@ const ContactBox = ({ label, text }) => {
   const handleCopy = () => {
     navigator.clipboard.writeText(text)
       .then(() => {
-        setToast("Copied!");
+        setToast("Copied");
         setTimeout(() => setToast(""), 2000);
       });
   };
