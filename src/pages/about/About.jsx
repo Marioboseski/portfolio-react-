@@ -1,3 +1,9 @@
+import myFoto from "../../assets/myFoto.jpg";
+import jsLogo from "../../assets/javascript-logo.svg";
+import htmlLogo from "../../assets/html-logo.svg";
+import cssLogo from "../../assets/css-logo.svg";
+import gitLogo from "../../assets/git-logo.svg";
+import githubLogo from "../../assets/github-logo.svg";
 import "./about.css";
 
 const About = () => {
@@ -10,7 +16,7 @@ const About = () => {
           <h2>About me </h2>
 
           <div className="about-info">
-            <img src="src/assets/myFoto.jpg" alt="formal-picture"></img>
+            <img src={myFoto} alt="formal-picture"></img>
 
             <div className="about-info-paragraphs">
               <p>Hi! I'm Mario Boseski, a Front End Web Developer with a huge passion
@@ -33,27 +39,27 @@ const About = () => {
           <div className="about-me-content">
 
             <section className="skill-logo">
-              <img src="src/assets/javascript-logo.svg" alt="javascript-logo"></img>
+              <img src={jsLogo} alt="javascript-logo"></img>
               <p>JavaScript</p>
             </section>
 
             <section className="skill-logo">
-              <img src="src/assets/html-logo.svg" alt="html-logo"></img>
+              <img src={htmlLogo} alt="html-logo"></img>
               <p>HTML</p>
             </section>
 
             <section className="skill-logo">
-              <img src="src/assets/css-logo.svg" alt="css-logo"></img>
+              <img src={cssLogo} alt="css-logo"></img>
               <p>CSS</p>
             </section>
 
             <section className="skill-logo">
-              <img src="src/assets/git-logo.svg" alt="git-logo"></img>
+              <img src={gitLogo} alt="git-logo"></img>
               <p>Git</p>
             </section>
 
             <section className="skill-logo">
-              <img src="src/assets/github-logo.svg" alt="github-logo"></img>
+              <img src={githubLogo} alt="github-logo"></img>
               <p>GitHub</p>
             </section>
 

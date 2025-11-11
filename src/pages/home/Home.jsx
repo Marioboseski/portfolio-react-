@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import myFoto from "../../assets/myFoto.jpg";
 import "./home.css";
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
           <h1>Mario Boseski</h1>
 
           <section className="home-section-class">
-            <img src="src/assets/myFoto.jpg" alt="Mario-Boseski-frontend-developer"></img>
+            <img src={myFoto} alt="Mario-Boseski-frontend-developer"></img>
 
             <div className="home-info">
               <p>Hello i'm Mario Boseski a Frontend web-developer,
