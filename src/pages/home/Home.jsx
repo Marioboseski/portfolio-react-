@@ -21,7 +21,7 @@ const Home = () => {
               </p>
 
               <ul className="cv-contact-links">
-                <li><a href={`${process.env.PUBLIC_URL}/resume.pdf`} className="resume-link" download="Mario Boseski - Resume.pdf">Resume</a></li>
+                <li><a href={`${import.meta.env.BASE_URL}resume.pdf`} className="resume-link" download="Mario Boseski - Resume.pdf">Resume</a></li>
                 <Link to="contact" className="contact-link">Contact me</Link>
               </ul>
             </div>
