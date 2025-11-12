@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import myFoto from "../../assets/myFoto.jpg";
+import { resume } from "react-dom/server";
 import "./home.css";
 
 const Home = () => {
@@ -20,7 +21,7 @@ const Home = () => {
               </p>
 
               <ul className="cv-contact-links">
-                <li><a href="/resume.pdf" className="resume-link" download="Mario Boseski - Resume.pdf">Resume</a></li>
+                <li><a href={`${process.env.PUBLIC_URL}/resume.pdf`} className="resume-link" download="Mario Boseski - Resume.pdf">Resume</a></li>
                 <Link to="contact" className="contact-link">Contact me</Link>
               </ul>
             </div>
