@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import myFoto from "../../assets/myFoto.jpg";
-import { resume } from "react-dom/server";
 import "./home.css";
 
 const Home = () => {
