@@ -4,6 +4,8 @@ import htmlLogo from "../../assets/html-logo.svg";
 import cssLogo from "../../assets/css-logo.svg";
 import gitLogo from "../../assets/git-logo.svg";
 import githubLogo from "../../assets/github-logo.svg";
+import tailwindlogo from "../../assets/tailwind-logo.svg";
+import reactlogo from "../../assets/react-logo.svg";
 import "./about.css";
 
 const About = () => {
@@ -61,6 +63,16 @@ const About = () => {
             <section className="skill-logo">
               <img src={githubLogo} alt="github-logo"></img>
               <p>GitHub</p>
+            </section>
+
+            <section className="skill-logo">
+              <img src={reactlogo} alt="react-logo"></img>
+              <p>React</p>
+            </section>
+
+            <section className="skill-logo">
+              <img src={tailwindlogo} alt="tailwind-logo"></img>
+              <p>Tailwind</p>
             </section>
 
           </div>
